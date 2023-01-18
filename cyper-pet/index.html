@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GAME</title>
+    <link rel="stylesheet" type="text/css" href="a/css/style.css">
+    <style type="text/css">
+        body {background-image: url('a/img/bg.jpg');}
+    </style>
+    <script type="text/javascript" src="a/js/1x01.js"></script>
+</head>
+
+<body>
+
+    <div id="ctnMain">
+
+        <div id="ctnTitle">
+          <h1>CyberPet.JS</h1>
+        </div>
+
+
+        <div id="ctnPetBox">
+            <div id="ctnPetTitle">PET INFO</div>
+            <div id="ctnPetInfo">
+                <p id="name">NAME: </p>
+                <p id="type">TYPE: </p>
+            </div>
+        </div>
+
+        <div id="ctnPetAnimalBox">
+            <div id="ctnPetAnimal">
+                <img id="imgPet">
+            </div>
+        </div>
+
+        <div id="ctnStatsBox">
+            <div id="ctnStatsTitle">STATS</div>
+            <div id="ctnStatsInfo">
+                <p id="stHappiness">Happiness: </p>
+                <p id="stThirst">Thirst: </p>
+                <p id="stCleaniness">Cleaniness: </p>
+                <p id="stHunger">Hunger: </p>
+
+            </div>
+        </div>
+
+        <div id="ctnButtonsBox">
+            <div id="ctnButtonsTitle">BUTTONS</div>
+            <div id="ctnButtons" style="margin-top: 10px;">
+                <button id="btnPlay" title="Play with the animal">
+                    <img src="a/img/buttons/play.png" alt="Play icon" width="40px" height="40px">
+                </button>
+
+                <button id="btnDrink" title="Water the animal">
+                    <img src="a/img/buttons/bowl.png" alt="water icon" width="40px" height="40px">
+                </button>
+
+                <button id="btnClean" title="Wash the animal">
+                    <img src="a/img/buttons/wash.png" alt="Wash icon" width="40px" height="40px">
+                </button>
+
+                <button id="btnFeed" title="Feed the animal">
+                    <img src="a/img/buttons/food.png" alt="Food icon" width="40px" height="40px">
+                </button>
+            </div>
+        </div>
+
+        <div id="ctnSubmitBox">
+            <div class="ctnSumbitTitle">SUMBIT</div>
+            <div id ="ctnSumbitText" style="margin-top: 10px">
+                <label id="lblName" for="petName">PET'S NAME:</label><br>
+                <input type="text" id="petName" placeholder="Enter your pet's name"><br><br>
+                <label id="lblType" for="petType">PET'S TYPE:</label><br>
+                <select id="petType">
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                </select><br>
+                <button id="submitButton" class="btnSumbit" style="margin-top: 10px;">SUBMIT</button>
+            </div>
+        </div>
+
+        <div id="ctnCMDBox">
+            <p id="cmdTXT"></p>
+        </div>
+
+        <footer>V: 1x00</footer>
+    </div>
+</body>
+</html>

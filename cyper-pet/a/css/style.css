@@ -1,0 +1,128 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* COLORS */
+:root {
+	--primary-color: #a1c5b4;
+	--secondary-color: #151516;
+	--highlight-color: #3414ec;
+	--glow-color: #e6e22c;
+}
+
+/* MAIN */
+html {
+	font-family: "Ubuntu", sans-serif;
+	height: 100%;
+	overflow: hidden;
+	color: var(--secondary-color);
+}
+
+body {
+	height: 100%;
+	background: var(--primary-color);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70%;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	margin: 10px;
+}
+
+/* DESIGN AREA */
+
+#ctnButtonsTitle,#ctnStatsTitle,#ctnPetTitle,.ctnSumbitTitle {
+	font-family: "Press Start 2P", cursive;
+	font-size: 20px;
+	/* TEXT GLOW - https://frontendgenerator.com/css/create-text-shadow-and-glow-text-online-using-css */
+	text-shadow: 0px 0px 17px var(--highlight-color);
+	color: var(--secondary-color);
+	background-color: rgba(242, 242, 242, 0);
+	text-decoration: underline;
+}
+
+#ctnStatsInfo,#ctnPetInfo,#cmdTXT,#ctnSumbitText {
+	/* TEXT GLOW - https://frontendgenerator.com/css/create-text-shadow-and-glow-text-online-using-css
+  text-shadow: 0px 0px 25px var(--glow-color); */
+	font-weight: 600;
+}
+
+/* PLACEMENTS */
+
+#ctnPetBox, #ctnStatsBox, #ctnButtonsBox, #ctnSubmitBox, #ctnCMDBox, #ctnPetAnimalBox {
+	text-align: center;
+	position: absolute;
+	width: auto;
+}
+
+#ctnStatsBox {
+	width: 20%;
+	top: 49%;
+	left: -3%;
+}
+
+#ctnPetBox {
+	top: 39%;
+	left: 87%;
+}
+
+#ctnButtonsBox {
+	left: 86%;
+	top: 50%;
+}
+
+#ctnSubmitBox {
+	width: 20%;
+	height: 25%;
+	top: 28%;
+	left: -3%;
+}
+
+#ctnCMDBox {
+	width: 45%;
+	height: 15%;
+	top: 85%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-size: 35px;
+	text-shadow: 0 0 15px white, 0 0 10px white, 0 0 5px white;
+	font-weight: bold;
+}
+
+#ctnPetAnimalBox {
+	transform: translate(-50%, -50%);
+	top: 62%;
+	left: 50%;
+}
+
+#ctnPetAnimalBox IMG {
+	width: 250px;
+}
+
+#btnRestartPage {
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+#btnRestartPage:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+}
